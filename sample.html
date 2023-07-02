@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            [data-width] {
+                overflow: hidden;
+            }
+            [data-width="5.0"] {
+                width: 287px;
+                color: brown;
+                position: relative;
+                z-index: -10;
+                left: 0px;
+                top: 0px;
+            }
+            [data-width="0.5"] {
+                position:absolute;
+                width: 80px;
+                height: 120px;
+                color:dodgerblue;
+            }
+            [data-width="4"] {
+                width: 64px;
+                color:azure;
+            }
+            [data-width="4.5"] {
+                width: 64px;
+            }
+            [data-width="3.5"] {
+                width: 57px;
+                position: absolute;
+                z-index: 100px;
+            }
+            [data-width="3"] {
+                width: 48px;
+            }
+            [data-width="2"] {
+                width: 48px;
+            }
+            [data-width="1.5"] {
+                width: 72px;
+                color: brown;
+            }
+            [data-width="1"] {
+                width: 48px;
+            }
+            .foo {
+              display: flex;
+              justify-content: start;
+              width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-width="5">★★★★★</div>
+        <div class="foo">
+          <label data-width="3.5">★★★★★</label> 
+          <label data-width="5.0">★★★★★</label> 
+        </div>
+        
+    </body>
+</html>
